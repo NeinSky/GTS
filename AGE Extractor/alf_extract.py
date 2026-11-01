@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-FileCopyrightText: 2026 Artem Pronchenko
+# SPDX-License-Identifier: GPL-3.0-or-later
 r"""
 alf_extract.py -- извлечение данных из томов ``*.ALF`` (AGE Library File).
 

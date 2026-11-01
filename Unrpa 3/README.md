@@ -148,4 +148,7 @@ RPA-3.0 0000000000000100 1a2b3c4d
 
 ## Лицензия
 
-GNU General Public License v3 или более поздняя (см. заголовок в файле `unrpa_3`).
+GNU General Public License v3 или более поздняя (`GPL-3.0-or-later`) — полный
+текст в корне репозитория, файл [`LICENSE`](../LICENSE). Скрипт — порт
+[`unrpa`](https://github.com/Lattyware/unrpa) (© Gareth Latty и участники,
+GPL-3.0-or-later); атрибуция сохранена в заголовке `unrpa_3`.

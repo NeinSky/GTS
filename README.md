@@ -65,6 +65,13 @@ unpack.bat mygame.rpa out
 
 ## Лицензия
 
-* `Unrpa 3/unrpa_3` — GNU General Public License v3 или более поздняя
-  (см. заголовок в файле); это порт оригинального Python 2 `unrpa`.
-* `AGE Extractor/` — отдельная лицензия в исходниках не указана.
+GTS распространяется на условиях **GNU General Public License v3 или более
+поздней** (`GPL-3.0-or-later`); полный текст — в файле [`LICENSE`](LICENSE).
+
+* `Unrpa 3/unrpa_3` — порт [`unrpa`](https://github.com/Lattyware/unrpa)
+  (© Gareth Latty и участники проекта, GPL-3.0-or-later); атрибуция сохранена
+  в заголовке файла.
+* `AGE Extractor/` — код проекта GTS, та же лицензия (`GPL-3.0-or-later`).
+
+Инструменты можно свободно использовать, изучать, изменять и распространять при
+условии сохранения этой же лицензии для производных работ.
