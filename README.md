@@ -8,6 +8,7 @@
 |---|---|---|
 | [`AGE Extractor/`](<AGE Extractor/README.md>) | тома `*.ALF` и бандлы `*.acgf` (движок AGE): WAV/XWMA, шрифты, MPEG, контейнеры `SYS4472`, картинки → PNG | [`AGE Extractor/README.md`](<AGE Extractor/README.md>) |
 | [`Unrpa 3/`](<Unrpa 3/README.md>) | архивы Ren'Py `*.rpa` / `*.rpi` (RPA-1.0, RPA-2.0, RPA-3.0) | [`Unrpa 3/README.md`](<Unrpa 3/README.md>) |
+| [`RPGMVP to PNG/`](<RPGMVP to PNG/README.md>) | картинки RPG Maker MV `*.rpgmvp`: снятие XOR-шифрования → обычный PNG | [`RPGMVP to PNG/README.md`](<RPGMVP to PNG/README.md>) |
 
 ## Структура
 
@@ -26,11 +27,17 @@ GTS/
     unrpa_3          распаковщик RPA (Python 3 порт оригинального unrpa)
     unpack.bat       обёртка для Windows: unpack.bat [архив.rpa] [каталог]
     README.md        документация по формату RPA
+  RPGMVP to PNG/
+    rpgmvp2png.py    картинки *.rpgmvp: снятие XOR-шифрования -> PNG
+    rpgmvp2png.bat   все *.rpgmvp -> PNG «в один клик»
+    verify.bat       проверка *.rpgmvp без записи
+    README.md        документация по формату *.rpgmvp
 ```
 
 ## Требования
 
-* Python 3.9 или новее в `PATH` (`AGE Extractor/`); проверено на 3.13 (`Unrpa 3/`).
+* Python 3.9 или новее в `PATH`
+  (`AGE Extractor/`; проверено на 3.13 — `Unrpa 3/`, `RPGMVP to PNG/`).
 * Windows — для `*.bat`-обёрток; сами скрипты кроссплатформенные.
 
 ## Быстрый старт
@@ -48,6 +55,10 @@ acgf2png.bat
 :: Unrpa 3: mygame.rpa -> .\out
 cd "..\Unrpa 3"
 unpack.bat mygame.rpa out
+
+:: RPGMVP to PNG: все *.rpgmvp из input\ -> output\
+cd "..\RPGMVP to PNG"
+rpgmvp2png.bat
 ```
 
 Подробности по форматам, опциям командной строки, проверкам целостности
